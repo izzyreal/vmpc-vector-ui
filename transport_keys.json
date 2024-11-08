@@ -1,0 +1,13 @@
+{
+  "name" : "transport_keys_container",
+  "direction" : "row",
+  "flex_grow" : 0.5,
+  "align_items" : "flex_end",
+  "children" : [
+    { "name" : "rec", "svg" : "big_key_red.svg", "label" : "REC" },
+    { "name" : "over_dub", "svg" : "big_key_red.svg", "label" : "OVER\nDUB" },
+    { "name" : "stop", "svg" : "big_key.svg", "label" : "STOP" },
+    { "name" : "play", "svg" : "big_key.svg", "label" : "PLAY" },
+    { "name" : "play_start", "svg" : "big_key.svg", "label" : "PLAY\nSTART" }
+  ]
+}

@@ -1,0 +1,34 @@
+{ "name" : "num_keys_container",
+  "direction" : "column",
+  "children" : [
+    { "name" : "num_keys_row_0_container",
+      "children" : [
+        { "name" : "7", "svg": "small_key_blue.svg", "label" : "7", "label_style" : "top_no_background" },
+        { "name" : "8", "svg": "small_key_blue.svg", "label" : "8", "label_style" : "top_no_background" },
+        { "name" : "9", "svg": "small_key_blue.svg", "label" : "9", "label_style" : "top_no_background" }
+      ]
+    },
+    { "name" : "num_keys_row_1_container",
+       "children" : [
+        { "name" : "4", "svg": "small_key_blue.svg", "label" : "4", "label_style" : "top_no_background" },
+        { "name" : "5", "svg": "small_key_blue.svg", "label" : "5", "label_style" : "top_no_background" },
+        { "name" : "6", "svg": "small_key_blue.svg", "label" : "6", "label_style" : "top_no_background" }
+      ]
+    },
+    { "name" : "num_keys_row_2_container",
+      "children" : [
+        { "name" : "1", "svg": "small_key_blue.svg", "label" : "1", "label_style" : "top_no_background" },
+        { "name" : "2", "svg": "small_key_blue.svg", "label" : "2", "label_style" : "top_no_background" },
+        { "name" : "3", "svg": "small_key_blue.svg", "label" : "3", "label_style" : "top_no_background" }
+      ]
+    },
+    { "name" : "num_keys_row_3_container",
+       "children" : [
+        { "name" : "shift", "svg": "small_key.svg", "label" : "SHIFT", "label_style" : "top_no_background" },
+        { "name" : "0", "svg": "small_key_blue.svg", "label" : "0", "label_style" : "top_no_background"  },
+        { "name" : "enter", "svg": "small_key.svg", "label" : "ENTER", "label_style" : "top_no_background" }
+      ]
+    },
+    { "name" : "spacer", "flex_grow" : 3 }
+  ]
+}
