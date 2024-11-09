@@ -1,5 +1,7 @@
 {
   "name" : "main_screen_and_open_window_container",
+  "type" : "flex_box",
+  "direction" : "row",
   "flex_grow" : 1,
   "children" :  [
     {

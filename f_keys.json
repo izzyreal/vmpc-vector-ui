@@ -1,4 +1,7 @@
-{ "name" : "f_keys_container",
+{
+  "name" : "f_keys_container",
+  "type" : "flex_box",
+  "direction" : "row",
   "children" : [
     { "name" : "f1", "svg": "small_key.svg", "label" : "F1", "label_style" : "top_with_background" },
     { "name" : "f2", "svg": "small_key.svg", "label" : "F2", "label_style" : "top_with_background" },

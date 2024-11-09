@@ -2,21 +2,29 @@
   [
     {
       "name" : "display_and_f_keys_container",
+      "type" : "flex_box",
       "direction" : "column",
       "flex_grow" : 2.2,
       "children" : [
-        { "name" : "display_container", "flex_grow": 5, "children" : [ { "name": "display", "svg" : "display.svg" } ] },
+        {
+          "name" : "display_container",
+          "type" : "flex_box",
+          "flex_grow": 5,
+          "children" : [ { "name": "display", "svg" : "display.svg"} ]
+        },
         { "include" : "f_keys" }
       ]
     },
     {
       "name" : "num_keys_and_main_screen_and_open_window_and_data_wheel_and_cursor_keys_container",
+      "type" : "flex_box",
       "direction" : "row",
       "flex_grow" : 2,
       "children" : [
         { "include" : "num_keys" },
         {
           "name" : "main_screen_and_open_window_and_data_wheel_and_cursor_keys_container",
+          "type" : "flex_box",
           "direction" : "column",
           "children" : [
             { "include" : "main_screen_and_open_window" },
@@ -33,6 +41,6 @@
       ]
     },
     { "include" : "transport_keys" },
-    { "name" : "spacer", "flex_grow" : 0.1 }
+    { "type" : "spacer", "flex_grow" : 0.1 }
   ]
 }

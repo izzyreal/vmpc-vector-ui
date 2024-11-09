@@ -1,5 +1,6 @@
 {
   "name" : "transport_keys_container",
+  "type" : "flex_box",
   "direction" : "row",
   "flex_grow" : 0.5,
   "align_items" : "flex_end",
