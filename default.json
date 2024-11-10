@@ -1,46 +1,25 @@
-{ "name" : "root", "children":
+{
+  "name" : "root",
+  "type" : "grid",
+  "row_fractions" : [ 1 ],
+  "column_fractions" : [ 1 ],
+  "children":
   [
     {
-      "name" : "display_and_f_keys_container",
-      "type" : "flex_box",
-      "direction" : "column",
-      "flex_grow" : 2.2,
+      "name" : "display_container",
+      "type" : "grid",
+      "area" : [ 1, 1, 1, 1 ],
+      "row_fractions" : [ 5, 1 ],
+      "column_fractions" : [ 1, 1, 1, 1, 1, 1 ],
       "children" : [
-        {
-          "name" : "display_container",
-          "type" : "flex_box",
-          "flex_grow": 5,
-          "children" : [ { "name": "display", "svg" : "display.svg"} ]
-        },
-        { "include" : "f_keys" }
+        { "name" : "display", "svg" : "display.svg", "area" : [ 1, 1, 1, 7 ] },
+        { "name" : "f1", "svg": "small_key.svg", "label" : "F1", "label_style" : "top_with_background", "area" : [ 2, 1, 2, 1 ] },
+        { "name" : "f2", "svg": "small_key.svg", "label" : "F2", "label_style" : "top_with_background", "area" : [ 2, 2, 2, 2 ] },
+        { "name" : "f3", "svg": "small_key.svg", "label" : "F3", "label_style" : "top_with_background", "area" : [ 2, 3, 2, 3 ] },
+        { "name" : "f4", "svg": "small_key.svg", "label" : "F4", "label_style" : "top_with_background", "area" : [ 2, 4, 2, 4 ] },
+        { "name" : "f5", "svg": "small_key.svg", "label" : "F5", "label_style" : "top_with_background", "area" : [ 2, 5, 2, 5 ] },
+        { "name" : "f6", "svg": "small_key.svg", "label" : "F6", "label_style" : "top_with_background", "area" : [ 2, 6, 2, 6 ] }
       ]
-    },
-    {
-      "name" : "num_keys_and_main_screen_and_open_window_and_data_wheel_and_cursor_keys_container",
-      "type" : "flex_box",
-      "direction" : "row",
-      "flex_grow" : 2,
-      "children" : [
-        { "include" : "num_keys" },
-        {
-          "name" : "main_screen_and_open_window_and_data_wheel_and_cursor_keys_container",
-          "type" : "flex_box",
-          "direction" : "column",
-          "children" : [
-            { "include" : "main_screen_and_open_window" },
-            {
-              "name" : "data_wheel",
-              "svg" : "data_wheel.svg",
-              "label" : "DATA",
-              "label_style" : "top_no_background",
-              "flex_grow" : 1
-            },
-            { "name" : "cursor_keys", "svg" : "cursor_keys.svg", "flex_grow" : 0.05 }
-          ]
-        }
-      ]
-    },
-    { "include" : "transport_keys" },
-    { "type" : "spacer", "flex_grow" : 0.1 }
+    }
   ]
 }
