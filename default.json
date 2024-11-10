@@ -13,12 +13,20 @@
       "column_fractions" : [ 1, 1, 1, 1, 1, 1 ],
       "children" : [
         { "name" : "display", "svg" : "display.svg", "area" : [ 1, 1, 1, 7 ] },
-        { "name" : "f1", "svg": "small_key.svg", "label" : "F1", "label_style" : "top_with_background", "area" : [ 2, 1, 2, 1 ] },
-        { "name" : "f2", "svg": "small_key.svg", "label" : "F2", "label_style" : "top_with_background", "area" : [ 2, 2, 2, 2 ] },
-        { "name" : "f3", "svg": "small_key.svg", "label" : "F3", "label_style" : "top_with_background", "area" : [ 2, 3, 2, 3 ] },
-        { "name" : "f4", "svg": "small_key.svg", "label" : "F4", "label_style" : "top_with_background", "area" : [ 2, 4, 2, 4 ] },
-        { "name" : "f5", "svg": "small_key.svg", "label" : "F5", "label_style" : "top_with_background", "area" : [ 2, 5, 2, 5 ] },
-        { "name" : "f6", "svg": "small_key.svg", "label" : "F6", "label_style" : "top_with_background", "area" : [ 2, 6, 2, 6 ] }
+        {
+          "name" : "f_keys_container",
+          "type" : "flex_box",
+          "area" : [ 2, 1, 2, 7 ],
+          "direction" : "row",
+          "children" : [
+            { "name" : "f1", "svg": "small_key.svg", "label" : "F1", "label_style" : "top_with_background" },
+            { "name" : "f2", "svg": "small_key.svg", "label" : "F2", "label_style" : "top_with_background" },
+            { "name" : "f3", "svg": "small_key.svg", "label" : "F3", "label_style" : "top_with_background" },
+            { "name" : "f4", "svg": "small_key.svg", "label" : "F4", "label_style" : "top_with_background" },
+            { "name" : "f5", "svg": "small_key.svg", "label" : "F5", "label_style" : "top_with_background" },
+            { "name" : "f6", "svg": "small_key.svg", "label" : "F6", "label_style" : "top_with_background" }
+          ]
+        }
       ]
     }
   ]
