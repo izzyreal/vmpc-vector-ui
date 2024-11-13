@@ -1,33 +1,29 @@
 {
-  "name" : "root",
+  "name" : "left_side",
   "type" : "grid",
-  "row_fractions" : [ 1 ],
-  "column_fractions" : [ 1 ],
+  "row_fractions" : [ 15, 10, 8, 9 ],
+  "column_fractions" : [ 4, 6, 8, 2 ],
   "children":
   [
+    { "include" : "display_and_f_keys", "area" : [ 1, 1, 1, 5 ] },
+    { "include" : "num_keys", "area" : [ 2, 1, 2, 3 ] },
     {
-      "name" : "display_container",
-      "type" : "grid",
-      "area" : [ 1, 1, 1, 1 ],
-      "row_fractions" : [ 5, 1 ],
-      "column_fractions" : [ 1, 1, 1, 1, 1, 1 ],
+      "name" : "main_screen_and_open_window_and_data_wheel_and_cursor_keys_container",
+      "area" : [ 2, 3, 4, 3 ],
+      "type" : "flex_box",
+      "direction" : "column",
       "children" : [
-        { "name" : "display", "svg" : "display.svg", "area" : [ 1, 1, 1, 7 ] },
+        { "include" : "main_screen_and_open_window" },
         {
-          "name" : "f_keys_container",
-          "type" : "flex_box",
-          "area" : [ 2, 1, 2, 7 ],
-          "direction" : "row",
-          "children" : [
-            { "name" : "f1", "svg": "small_key.svg", "label" : "F1", "label_style" : "top_with_background" },
-            { "name" : "f2", "svg": "small_key.svg", "label" : "F2", "label_style" : "top_with_background" },
-            { "name" : "f3", "svg": "small_key.svg", "label" : "F3", "label_style" : "top_with_background" },
-            { "name" : "f4", "svg": "small_key.svg", "label" : "F4", "label_style" : "top_with_background" },
-            { "name" : "f5", "svg": "small_key.svg", "label" : "F5", "label_style" : "top_with_background" },
-            { "name" : "f6", "svg": "small_key.svg", "label" : "F6", "label_style" : "top_with_background" }
-          ]
-        }
+          "name" : "data_wheel",
+          "svg" : "data_wheel.svg",
+          "label" : "DATA",
+          "label_style" : "top_no_background",
+          "flex_grow" : 1
+        },
+        { "name" : "cursor_keys", "svg" : "cursor_keys.svg", "flex_grow" : 0.05 }
       ]
-    }
+    },
+    { "include" : "transport_keys", "area" : [ 4, 2, 4, 4 ] }
   ]
 }

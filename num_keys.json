@@ -42,7 +42,6 @@
         { "name" : "0", "svg": "small_key_blue.svg", "label" : "0", "label_style" : "top_no_background"  },
         { "name" : "enter", "svg": "small_key.svg", "label" : "ENTER", "label_style" : "top_no_background" }
       ]
-    },
-    { "type" : "spacer", "flex_grow" : 3 }
+    }
   ]
 }

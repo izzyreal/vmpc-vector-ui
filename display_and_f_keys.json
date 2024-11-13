@@ -1,0 +1,10 @@
+{
+  "name" : "display_and_f_keys_container",
+  "type" : "grid",
+  "row_fractions" : [ 5, 1 ],
+  "column_fractions" : [ 1 ],
+  "children" : [
+    { "name" : "display", "svg" : "display.svg", "area" : [ 1, 1, 1, 1 ] },
+    { "include" : "f_keys", "area" : [ 2, 1, 2, 1] }
+  ]
+}
