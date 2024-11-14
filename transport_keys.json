@@ -1,14 +1,18 @@
 {
   "name" : "transport_keys_container",
-  "type" : "flex_box",
-  "direction" : "row",
-  "flex_grow" : 0.5,
-  "align_items" : "flex_end",
+  "type" : "grid",
+  "row_fractions" : [ 1, 1 ],
+  "column_fractions" : [ 1, 1, 1, 1, 1 ],
   "children" : [
-    { "name" : "rec", "svg" : "big_key_red.svg", "label" : "REC" },
-    { "name" : "over_dub", "svg" : "big_key_red.svg", "label" : "OVER\nDUB" },
-    { "name" : "stop", "svg" : "big_key.svg", "label" : "STOP" },
-    { "name" : "play", "svg" : "big_key.svg", "label" : "PLAY" },
-    { "name" : "play_start", "svg" : "big_key.svg", "label" : "PLAY\nSTART" }
+    { "name" : "previous_step_event", "svg" : "medium_key.svg", "label" : "<", "area" : [ 1, 1, 1, 1 ] },
+    { "name" : "next_step_event", "svg" : "medium_key.svg", "label" : ">", "area" : [ 1, 2, 1, 2 ] },
+    { "name" : "go_to", "svg" : "medium_key.svg", "label" : "GO TO", "area" : [ 1, 3, 1, 3 ] },
+    { "name" : "previous_bar_start", "svg" : "medium_key.svg", "label" : "<<", "area" : [ 1, 4, 1, 4 ] },
+    { "name" : "next_bar_end", "svg" : "medium_key.svg", "label" : ">>", "area" : [ 1, 5, 1, 5 ] },
+    { "name" : "rec", "svg" : "big_key_red.svg", "label" : "REC", "area" : [ 2, 1, 2, 1] },
+    { "name" : "over_dub", "svg" : "big_key_red.svg", "label" : "OVER\nDUB", "area" : [ 2, 2, 2, 2] },
+    { "name" : "stop", "svg" : "big_key.svg", "label" : "STOP", "area" : [ 2, 3, 2, 3] },
+    { "name" : "play", "svg" : "big_key.svg", "label" : "PLAY", "area" : [ 2, 4, 2, 4] },
+    { "name" : "play_start", "svg" : "big_key.svg", "label" : "PLAY\nSTART", "area" : [ 2, 5, 2, 5] }
   ]
 }
