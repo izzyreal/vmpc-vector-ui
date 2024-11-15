@@ -1,0 +1,10 @@
+{
+  "name" : "transport_and_go_to_keys_container",
+  "type" : "grid",
+  "row_fractions" : [ 10, 15 ],
+  "column_fractions" : [ 1 ],
+  "children" : [
+    { "include" : "go_to_keys", "area" : [ 1, 1, 1, 1 ] },
+    { "include" : "transport_keys", "area" : [ 2, 1, 2, 1 ] }
+  ]
+}

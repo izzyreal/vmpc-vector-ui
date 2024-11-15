@@ -24,7 +24,6 @@
         { "name" : "cursor_keys", "svg" : "cursor_keys.svg", "flex_grow" : 0.05 }
       ]
     },
-    { "include" : "transport_keys", "area" : [ 4, 2, 4, 3 ] },
     {
       "name" : "slider",
       "area" : [ 3, 1, 4, 1 ],
@@ -41,6 +40,7 @@
         { "name" : "undo_seq", "svg" : "medium_key.svg", "label" : "UNDO SEQ", "area" : [ 2, 1, 2, 1 ] },
         { "name" : "erase", "svg" : "medium_key.svg", "label" : "ERASE", "area" : [ 2, 2, 2, 2 ] }
       ]
-    }
+    },
+    { "include" : "transport_and_go_to_keys", "area" : [ 4, 2, 4, 3 ] }
   ]
 }
